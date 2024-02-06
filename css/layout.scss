@@ -1,0 +1,97 @@
+// Mixin for button styles and Layout adjustment
+
+//importing main.scss since it has the variable definitions
+@import "main";
+
+//Button Mixins
+@mixin button-styles {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: $my-bg-color;
+    border: none;
+    color: $custom-text-color;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    height: 20px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+  
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+  
+      &:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -20px; 
+        transform: rotate(-90deg);
+        transition: 0.5s;
+      }
+    }
+  
+    &:hover span {
+      padding-left: 25px; 
+    }
+  
+    &:hover span:after {
+      opacity: 1;
+      left: 0; 
+    }
+  }
+  
+
+  @mixin respond-to($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+  
+
+  .button {
+    @include button-styles;
+  }
+  
+  .button-secondary {
+    @extend %button-styles !optional;
+    background-color: #e74c3c; 
+    margin-left: 10px; 
+  }
+  .button-third {
+    @extend %button-styles !optional;
+    background-color: #e74c3c; 
+    margin-left: 10px;
+    width: 40px; 
+  }
+  
+  .my_wrapper {
+    max-width: 90%;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(600px) {
+      max-width: 100%;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  
+    @include respond-to(600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  

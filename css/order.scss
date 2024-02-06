@@ -1,0 +1,95 @@
+//This SCSS file utilise inheritance property for the buttons in the order form
+
+@import "layout";
+@import "main";
+
+
+  .order-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-container {
+    width: 100%; 
+  }
+  .form {
+    padding: 20px 20px;
+    background-color: $custom-text-color; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    h2{
+        font-size: 38px;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+
+  .delivery-options {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delivery,
+  .pickup {
+    height: 40px; 
+    margin-right: 10px;
+  }
+
+  select{
+    width: inherit;
+    height: 40px;
+    border-radius: 5%;
+  }
+
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px;
+  }
+  
+  textarea{
+    width: 90%;
+  }
+  input {
+    width: 90%;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  
+  .button-secondary {
+    @include button-styles;
+    width: 150px; 
+    
+  }
+  .button-third {
+    @include button-styles;
+    &:after {
+        right: -20px !important; 
+      }
+    &:hover span:after {
+        right: 0 !important; 
+    }
+  }
+  
+  .form-button{
+    justify-content: center;
+    display: flex;
+  }

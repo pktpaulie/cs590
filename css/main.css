@@ -1,0 +1,144 @@
+header {
+  background-color: #462521;
+  padding: 5px;
+  text-align: center;
+  color: #fae3c2;
+}
+header h1 {
+  color: #fae3c2;
+  font-size: 48px;
+  font-family: "Brush Script MT", cursive;
+}
+
+body {
+  margin-bottom: 50px;
+  font-style: unset;
+  
+}
+
+main {
+  padding: 5px 60px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #462521;
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  color: #fae3c2;
+  justify-content: center;
+}
+footer a:hover {
+  color: #fae3c2;
+}
+
+nav {
+  display: flex;
+  padding: 2px 0;
+}
+nav a {
+  text-decoration: none;
+  padding: 6px 12px;
+  color: #CA2E55;
+}
+nav a:hover {
+  background-color: #462521;
+  color: #fae3c2;
+  border-radius: 5px;
+}
+nav a:active {
+  background-color: #CA2E55;
+  color: #fae3c2;
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+  color: #CA2E55;
+}
+
+a {
+  color: #CA2E55;
+  text-decoration: none;
+}
+a:hover {
+  color: #6d1f32;
+}
+
+h2 {
+  margin: 2px 2px;
+}
+
+.box {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  place-self: center stretch;
+}
+
+.nested {
+  border-radius: 5px;
+  place-self: center stretch;
+}
+.nested li, .nested h5 {
+  font-size: 16px;
+  color: #CA2E55;
+}
+.nested img {
+  width: 100%;
+  height: 200px;
+  border-radius: 40px 10px;
+}
+.nested .description {
+  font-style: oblique;
+}
+
+.button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 30px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px 10px 0 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card img:hover {
+  opacity: 0.9;
+}
+.card .card-content {
+  padding: 20px;
+}
+.card .item-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card .description {
+  color: #666;
+  margin-bottom: 10px;
+}
+.card .price {
+  font-size: 18px;
+  color: #CA2E55;
+}
+
+/*# sourceMappingURL=main.css.map */

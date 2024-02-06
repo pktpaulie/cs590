@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulinez</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div class="container">
+        <img src="images/Pauline_2_logo.png" alt="logo" style="height: 90px;">    
+        </div>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>        
+        </nav>
+
+    <!-- Header Section -->
+    <header id="top">
+        <h1>Orders Delivered Fast</h1>
+    </header>
+ 
+    <!-- Main Section -->
+    <main >          
+        <section class="order-container">
+            <div class="form-title">
+                <h2>Order Online</h2>
+            
+            <h4> <i>A quick and easy way to get your meals everyday</i> </h4>
+            </div>
+                <div class="form-container">
+                    <form class="form" action="" method="post">
+                        <label for="customer_name">First Name</label>
+                        <input type="text" placeholder="Enter Your First Name" required>
+                
+                        <label for="customer_name">Surname</label>
+                        <input type="text" placeholder="Enter Your Second Name" required>
+                
+                        <label for="meal">Select Meal:</label>
+                        <select id="meal" name="meal">
+                            <option value="pancakes">Pancakes</option>
+                            <option value="hardcorn">Hardcorn</option>
+                            <option value="grasshoppers">Grasshoppers</option>
+                            <option value="chapati">Chapatti</option>
+                            <option value="gonja">Gonja</option>
+                            <option value="luwombo">Luwombo</option>
+                            <option value="matooke">Matooke</option>
+                            <option value="pilau">Pilau</option>
+                            <option value="rolex">Rolex</option>
+         
+                        </select>
+                
+                        <label for="quantity">Quantity</label>
+                        <input type="number" placeholder="1" required>
+                
+                        <label for="date">Date</label>
+                        <input type="date" required>
+                
+                        <label for="location">Location:</label>
+                        
+                            <select id="location" name="location">
+                                <option value="fortwayne">Fort Wayne</option>
+                                <option value="indianapolis">Indianapolis</option>
+                                <option value="southbend">Southbend</option>
+                                <option value="bloomington">Bloomington</option>
+                                <option value="gary">Gary</option>
+                                <option value="evansville">Evansville</option>
+                                <option value="Carmel">Carmel</option>
+                                <option value="muncie">Muncie</option>
+                                <option value="hammond">Hammond</option>
+                            </select>
+                            <div class="delivery-options">
+                            <div class="option">
+                              <label for="delivery">Delivery</label>
+                              <img src="images/delivery.png" alt="delivery" class="delivery">
+                              <input type="radio" name="delivery_option" id="delivery">
+                            </div>
+                            
+                            <div class="option">
+                              <label for="pickup">Pickup</label>
+                              <img src="images/pickup.png" alt="pickup" class="pickup">
+                              <input type="radio" name="delivery_option" id="pickup">
+                            </div>
+                          </div>
+
+                        <label for="delivery_instructions">Delivery Instructions</label>
+                        <textarea name="delivery_instructions" id="" cols="54" rows="8" placeholder="Enter Delivery Instructions"></textarea>
+                
+                        <label for="payment_method">Payment Method</label>
+                        <select id="payment_method" name="payment_method">
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="apple_pay">Apple Pay</option>
+                            
+                        </select>
+                
+                        <div class="button-section"><button class="button-secondary" type="submit"><span>Submit</span></button></div>
+                    </form>
+                    
+                    
+                </div>
+                 
+        </section>
+    </main>
+
+    <br>
+    <section class="my_wrapper">
+        <h3>Get the Recipe</h3>
+        
+        <br>
+        <iframe height="400" src="https://www.youtube.com/embed/-2kdqAm8M4A" title="CHICKEN LUWOMBO RECIPE | STEAMED CHICKEN RECIPE. HOW TO CHICKEN IN BANANA LEAVES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+    </section> 
+    <!-- Bottom Section for Navigation buttons -->
+    <section class="button-section"> 
+        <a href="home.html"><button class="button-secondary"><span>Back Home </span></button>
+        </a>
+        <a href="#top"><button class="button"><span>Top </span></button>
+        </a> 
+    </section>
+
+</body>
+
+<!-- Footer Section -->
+<footer>
+    <br>
+    <p style="padding: 2px;">Paulinez Dine & Drink</p>    
+    <p style="padding: 2px;">A Taste of Uganda's finest food</p>
+    <a href="order.html">Order</a>
+    <pre>Open Every Tuesday - Sunday, 8am - 11pm</pre>
+    
+    <img src="images/Pauline_red_logo.png" alt="logo" style="height: 100px;">
+    <p>&copy Paulinez</p>
+</footer>
+</html>
